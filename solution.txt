@@ -1,2 +1,27 @@
-Please add your pseudocode to this file
-And a written explanation of your solution
+PROBLEM:
+Generate all possible consecutive substrings from a given string.
+
+PSEUDOCODE:
+1. Create an empty array called substrings.
+2. Loop through the string using a starting position.
+3. For each starting position, loop through the remaining characters.
+4. Extract a substring using the starting and ending positions.
+5. Add the extracted substring to the array.
+6. Return the array.
+
+SOLUTION EXPLANATION:
+The solution uses two nested loops.
+The outer loop selects the starting position.
+The inner loop selects the ending position.
+The JavaScript slice() method extracts each substring.
+Each substring is stored in an array.
+Finally, the function returns the completed array.
+
+ALGORITHM TYPE:
+Brute-force enumeration. The algorithm systematically generates every possible consecutive substring.
+
+TIME COMPLEXITY:
+O(n^3), counting the total characters copied into the resulting substrings. There are O(n^2) substrings, and their combined character lengths can be O(n^3).
+
+SPACE COMPLEXITY:
+O(n^3), counting the characters stored in all returned substrings. The array contains O(n^2) entries.
